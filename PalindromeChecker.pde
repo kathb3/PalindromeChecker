@@ -32,8 +32,7 @@ public boolean palindrome(String word)
 }
 public String reverse(String str)
 {
-    String n = new String();
-    String n = new String("");
+    String sNew = new String("");
   if(str.length() < 2){
     return str;
   }
@@ -42,7 +41,7 @@ public String reverse(String str)
       if(!str.substring(i-1,i).equals("!"))
         if(!str.substring(i-1,i).equals("'"))
           if(!str.substring(i-1,i).equals(","))
-            n += str.substring(i-1,i);
+            sNew += str.substring(i-1,i);
   }
   return n;
 }
